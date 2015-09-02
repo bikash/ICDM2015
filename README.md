@@ -8,9 +8,9 @@ Instalation:
 This software is implemented in python and uses the external software XGBoost.
 
 The libraries of python needed are:
- - Numpy
- - Scipy
- - Scikit Learn
+ - [Numpy] (http://www.numpy.org/)
+ - [Scipy] (http://www.scipy.org/)
+ - [SciKit Learn](http://scikit-learn.org/)
 
 XGBoost software can be downloaded from:
 XGBoost: https://github.com/dmlc/xgboost
