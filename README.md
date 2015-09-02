@@ -69,9 +69,9 @@ It is not possible to create a training set containing every combination of devi
 
 For every Device:
 Rule 1: We create a set that contains the deviceâ€™s IP addresses that appear in less than ten devices and less than twenty cookies. The initial list of candidates is every cookie with known handle that appears in any of theses IP addresses.
-Rule 2: If the previous rule returned an empty set of candidates we create a set that contains the deviceâ€™s IP addresses that appear in less than twenty five devices and less than fifty cookies. The initial list of candidates is every with known handle cookie that appears in any of theses IP addresses.
-Rule 3: If the previous rule returned an empty set of candidates we create a set that contains the deviceâ€™s IP addresses. The initial list of candidates is every cookie with known handle that appears in any of theses IP addresses.
-Rule 4: If the previous rule returned an empty set of candidates we create a set that contains the deviceâ€™s IP addresses. The initial list of candidates is every cookie that appears in any of theses IP addresses.
+Rule 2: If the previous rule returned an empty set of candidates we create a set that contains the device's IP addresses that appear in less than twenty five devices and less than fifty cookies. The initial list of candidates is every with known handle cookie that appears in any of theses IP addresses.
+Rule 3: If the previous rule returned an empty set of candidates we create a set that contains the device's IP addresses. The initial list of candidates is every cookie with known handle that appears in any of theses IP addresses.
+Rule 4: If the previous rule returned an empty set of candidates we create a set that contains the device's IP addresses. The initial list of candidates is every cookie that appears in any of theses IP addresses.
 Rule 5: If a cookie has the same handle than any of the candidates then this cookie is a candidate too.
 
 * Creating the datasets:
@@ -87,7 +87,7 @@ Semi-supervised learning is a class of supervised learning that also make use of
 * PostProcessing:
 We iterate over the devices using the following procedure:
 If the initial selection of candidates did not find a candidate with enough likelihood (logistic output of the classifier) we choose a new set of candidate cookies selecting every cookie that shares an IP address with the device and we score them using the classifier.
-We label the cookie with highest score as one of the deviceâ€™s cookies. If there are other cookies with the same handle than this cookie we label them too.
+We label the cookie with highest score as one of the device's cookies. If there are other cookies with the same handle than this cookie we label them too.
 We sort the candidates in descending order by the score they have reached and we iterate over them. We label them as a device's cookie if they reach a threshold.
 The value of the threshold changes attending to:
  The number of cookies already labeled as device's cookies.
@@ -117,12 +117,12 @@ This section contains the description of every feature contained in the training
  * Cookie Computer OS
  * Cookie Browser Version
  * Cookie Country
- * Device Annonymous c0
- * Device Annonymous c1
- * Device Annonymous c2
- * Device Annonymous 5
- * Device Annonymous 6
- * Device Annonymous 7
+ * Cookie Annonymous c0
+ * Cookie Annonymous c1
+ * Cookie Annonymous c2
+ * Cookie Annonymous 5
+ * Cookie Annonymous 6
+ * Cookie Annonymous 7
  * Number of IP addresses visited by the Cookie
 
 3) Relational Features
