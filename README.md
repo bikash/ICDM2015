@@ -65,14 +65,13 @@ Description of the algorithm:
 At the initial stage, we iterate over the list of cookies looking for other cookies with the same handle. Then, for every pair of cookies with the same handle, if one of them doesnâ€™t appear in an IP address that the other cookie appears, we include all the information about this IP address in the cookie.
 
 * Initial selection of candidate cookies for every Device:
-It is not possible to create a training set containing every combination of devices and cookies due to the high number of them. In order to reduce the initial complexity of the problem and to create an affordable dataset, some basic rules have been created to obtain an initial reduced set of candidate cookies for every device. The rules are based on the IP addresses that both device and cookie have in common and how frequent they are in other devices and cookies. The procedure is as follows.
+It is not possible to create a training set containing every combination of devices and cookies due to the high number of them. In order to reduce the initial complexity of the problem and to create an affordable dataset, some basic rules have been created to obtain an initial reduced set of candidate cookies for every device. The rules are based on the IP addresses that both device and cookie have in common and how frequent they are in other devices and cookies. The procedure, for every device, is as follows.
 
-For every Device:
-Rule 1: We create a set that contains the deviceâ€™s IP addresses that appear in less than ten devices and less than twenty cookies. The initial list of candidates is every cookie with known handle that appears in any of theses IP addresses.
-Rule 2: If the previous rule returned an empty set of candidates we create a set that contains the device's IP addresses that appear in less than twenty five devices and less than fifty cookies. The initial list of candidates is every with known handle cookie that appears in any of theses IP addresses.
-Rule 3: If the previous rule returned an empty set of candidates we create a set that contains the device's IP addresses. The initial list of candidates is every cookie with known handle that appears in any of theses IP addresses.
-Rule 4: If the previous rule returned an empty set of candidates we create a set that contains the device's IP addresses. The initial list of candidates is every cookie that appears in any of theses IP addresses.
-Rule 5: If a cookie has the same handle than any of the candidates then this cookie is a candidate too.
+  1. Rule 1: We create a set that contains the deviceâ€™s IP addresses that appear in less than ten devices and less than twenty cookies. The initial list of candidates is every cookie with known handle that appears in any of theses IP addresses.
+  1. Rule 2: If the previous rule returned an empty set of candidates we create a set that contains the device's IP addresses that appear in less than twenty five devices and less than fifty cookies. The initial list of candidates is every with known handle cookie that appears in any of theses IP addresses.
+  1. Rule 3: If the previous rule returned an empty set of candidates we create a set that contains the device's IP addresses. The initial list of candidates is every cookie with known handle that appears in any of theses IP addresses.
+  1. Rule 4: If the previous rule returned an empty set of candidates we create a set that contains the device's IP addresses. The initial list of candidates is every cookie that appears in any of theses IP addresses.
+  1. Rule 5: If a cookie has the same handle than any of the candidates then this cookie is a candidate too.
 
 * Creating the datasets:
 Every pattern in the training and test set represents a device/candidate cookie pair obtained by the previous step and contains information about the device (Operating System (OS), Country, ...), the cookie (Cookie Browser Version, Cookie Computer OS,...) and the relation between them (number of IP addresses shared by both device and cookie, number of other cookies with the same handle than the cookie,...).
