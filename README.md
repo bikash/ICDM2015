@@ -133,19 +133,19 @@ we have created some sets in order to extract features that represents the relat
  * setOtherP roperties: This set contains the properties visited by any device in setOtherCookies.
 
 
-  * Number of IP addresses visited by both device and cookie.
-  * Number of IP addresses that appear in less than ten devices and less than twenty cookies visited by both device and cookie.
-  * Number of devices in setOtherDevices
-  * Number of IP addresses that the device has in common with setOtherIP.
-  * Number of Properties that the device has in common with setOtherP roperties.
-  * Number of cookies with the same handle than this cookie.
-  * Addition of features IsCell, Total Frequency, Count C0, Count C1 and Count C2 of every IP address in setIP.
-  * Average of features IsCell, Total Frequency, Count C0, Count C1 and Count C2 of every IP address in setIP.
-  * Addition of features Frequency Count, Count 1, Count 2, Count 3, Count 4 and Count 5 of the device’s IP addresses in setIP.
-  * Average of features Frequency Count, Count 1, Count 2, Count 3, Count 4 and Count 5 of the device’s IP addresses in setIP.
-  * Addition of features Frequency Count, Count 1, Count 2, Count 3, Count 4 and Count 5 of the cookie’s IP addresses in setIP.
-  * Average of features Frequency Count, Count 1, Count 2, Count 3, Count 4 and Count 5 of the cookie’s IP addresses in setIP.
-  * Addition of features Frequency Count, Count 1, Count 2, Count 3, Count 4 and Count 5 of the device’s IP addresses in setIP minus addition of features Frequency Count, Count 1, Count 2, Count 3, Count 4 and Count 5 of the cookie’s IP addresses in setIP.
+ * Number of IP addresses visited by both device and cookie.
+ * Number of IP addresses that appear in less than ten devices and less than twenty cookies visited by both device and cookie.
+ * Number of devices in setOtherDevices
+ * Number of IP addresses that the device has in common with setOtherIP.
+ * Number of Properties that the device has in common with setOtherP roperties.
+ * Number of cookies with the same handle than this cookie.
+ * Addition of features IsCell, Total Frequency, Count C0, Count C1 and Count C2 of every IP address in setIP.
+ * Average of features IsCell, Total Frequency, Count C0, Count C1 and Count C2 of every IP address in setIP.
+ * Addition of features Frequency Count, Count 1, Count 2, Count 3, Count 4 and Count 5 of the device’s IP addresses in setIP.
+ * Average of features Frequency Count, Count 1, Count 2, Count 3, Count 4 and Count 5 of the device’s IP addresses in setIP.
+ * Addition of features Frequency Count, Count 1, Count 2, Count 3, Count 4 and Count 5 of the cookie’s IP addresses in setIP.
+ * Average of features Frequency Count, Count 1, Count 2, Count 3, Count 4 and Count 5 of the cookie’s IP addresses in setIP.
+ * Addition of features Frequency Count, Count 1, Count 2, Count 3, Count 4 and Count 5 of the device’s IP addresses in setIP minus addition of features Frequency Count, Count 1, Count 2, Count 3, Count 4 and Count 5 of the cookie’s IP addresses in setIP.
 
 
 
